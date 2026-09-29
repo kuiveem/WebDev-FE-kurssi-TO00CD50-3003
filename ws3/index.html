@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sealion - Ws 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="animal.js" defer></script>
+</head>
+
+<body>
+
+    <h1 id="animalTitle">My Favourite Animal: The Sealion</h1>
+
+    <hr>
+
+    <p>
+        Hi! My name is Eemeli and I am a 3rd year student at Laurea.
+        My favourite animal is the sealion because they are very goofy.
+    </p>
+
+    <img src="img/goober.jpg" alt="Sealion chilling">
+
+    <hr>
+
+   
+    <h2 id="exercise1">Exercise 1: Sealion Click Events</h2>
+
+    <p>
+        Click the buttons below to learn something about sealions.
+    </p>
+
+    <p>
+        <button onclick="alert('You clicked me!')">
+            Click me
+        </button>
+
+        <button onclick="showTable()">
+            Show Sealion Table
+        </button>
+    </p>
+
+    <div id="tableContainer"></div>
+
+    <hr>
+
+    
+    <h2 id="exercise2">Exercise 2: Sealion Mouse Events</h2>
+
+    <p>
+        Move your mouse over this heading and check the console.
+    </p>
+
+    <hr>
+
+    
+    <h2>Exercise 3: Sealion Feedback</h2>
+
+    <p>
+        Write something about sealions in the feedback box.
+    </p>
+
+    <h3>Quick Feedback Form</h3>
+
+    <form id="feedbackForm" novalidate>
+
+        <label for="feedback">Feedback:</label><br>
+
+        <textarea
+            id="feedback"
+            placeholder="Write your feedback about sealions..."
+            rows="5"
+            maxlength="200"></textarea>
+
+        <div class="formInfo">
+            <span id="charcount">0/200</span>
+            <span id="status"></span>
+        </div>
+
+        <button id="sendBtn" type="submit">
+            Send Feedback
+        </button>
+
+    </form>
+
+    <h3>Preview</h3>
+
+    <div id="preview">
+        (Your sealion feedback will appear here)
+    </div>
+
+    <hr>
+
+    <!-- Exercise 4 -->
+    <h2>Exercise 4: Submit Your Sealion Opinion</h2>
+
+    <p>
+        Your feedback must contain between 10 and 200 characters.
+    </p>
+
+    <hr>
+
+    <!-- Exercise 5 -->
+    <h2>Exercise 5: Keyboard Events</h2>
+
+    <h3>Sealion Keyboard Detector</h3>
+
+    <p>
+        Press any key on your keyboard.
+    </p>
+
+    <div id="keybox">
+        Press any key...
+    </div>
+
+    <p id="keyinfo">
+        Your key information will appear here.
+    </p>
+
+    <hr>
+
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Sea_lion" target="_blank">
+            Learn more about sealions
+        </a>
+    </p>
+
+</body>
+</html>
