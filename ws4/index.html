@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workshop 04 - Sealions DOM</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="animal.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="mainHeading">Ws4 - Sealions DOM</h1>
+
+        <p>
+            In this workshop ill be: selecting HTML elements,
+            listening for events and changing the DOM.
+        </p>
+
+        <p>
+            <strong>Select - Listen - Change the DOM</strong>
+        </p>
+
+        <button id="animalButton">Show / hide table</button>
+
+        <table id="animalTable">
+            <thead>
+                <tr>
+                    <th>Sealion facts</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Seals and sea lions are marine mammals.</td>
+                </tr>
+
+                <tr>
+                    <td>Sea lions are excellent swimmers.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </header>
+
+
+    <main>
+
+
+        <section>
+
+            <h2 id="taskOneHeading">Task 1: Changing sealion content</h2>
+
+            <p>
+                Use the buttons below to change the sealion information.
+            </p>
+
+            <div class="buttons">
+
+                <button id="changeHeadingButton">
+                    Change heading
+                </button>
+
+                <button id="changeStyleButton">
+                    Change style
+                </button>
+
+                <button id="changeTextButton">
+                    Change sealion text
+                </button>
+
+            </div>
+
+            <div class="instructions">
+
+                <ol>
+
+                    <li>
+                        The first button changes the Task 1 heading.
+                    </li>
+
+                    <li>
+                        The second button adds or removes the
+                        <code>highlight</code> class.
+                    </li>
+
+                    <li>
+                        The third button should change the sealion text.
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <p id="animalText">
+                Sea lions are playful and intelligent marine mammals.
+            </p>
+
+          
+        </section>
+
+
+        <hr>
+
+
+        <section>
+
+            <h2>Task 2: Creating elements with JavaScript</h2>
+
+        
+
+            <div id="animalContent"></div>
+
+            <div class="buttons">
+
+                <button id="hideAnimalButton">
+                    Hide animal
+                </button>
+
+                <button id="showAnimalButton">
+                    Show animal
+                </button>
+
+            </div>
+
+            <p>
+                The buttons hide and show the animal .
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- TASK 3 -->
+
+        <section>
+
+            <h2>Task 3: Selecting an animal</h2>
+
+            <p>
+                Select an animal from the drop-down menu.
+                The name, image and description will change.
+            </p>
+
+            <label for="animalSelect">
+                Select an animal:
+            </label>
+
+            <select id="animalSelect">
+
+                <option value="sealion">
+                    Sealion
+                </option>
+
+                <option value="elephant">
+                    Elephant
+                </option>
+
+                <option value="tiger">
+                    Tiger
+                </option>
+
+                <option value="penguin">
+                    Penguin
+                </option>
+
+            </select>
+
+
+            <article id="selectedAnimal">
+
+                <h3 id="animalName">
+                    Sealion
+                </h3>
+
+                <img
+                    id="animalImage"
+                    src="img/goober.jpg"
+                    alt="Sealion chilling"
+                >
+
+                <p id="animalDescription">
+                    Sea lions are playful marine mammals that live near
+                    coastal areas.
+                </p>
+
+            </article>
+
+
+            
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- TASK 4 -->
+
+        <section>
+
+            <h2>Task 4: Adding animal observations</h2>
+
+            <p>
+                Add a new animal observation to the table.
+            </p>
+
+
+            <form id="animalForm">
+
+                <div>
+
+                    <label for="observationAnimal">
+                        Animal:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="observationAnimal"
+                        name="observationAnimal"
+                        placeholder="Example: Sealion"
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="observationLocation">
+                        Location:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="observationLocation"
+                        name="observationLocation"
+                        placeholder="Example: Helsinki"
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="observationDate">
+                        Date:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="observationDate"
+                        name="observationDate"
+                    >
+
+                </div>
+
+
+                <button type="submit">
+                    Add observation
+                </button>
+
+            </form>
+
+
+            <table id="observationTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Animal</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="observationTableBody">
+
+                    <tr>
+                        <td>Sealion</td>
+                        <td>Coast</td>
+                        <td>15 September 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sealion</td>
+                        <td>Helsinki Zoo</td>
+                        <td>18 September 2026</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+
+        </section>
+
+
+        <hr>
+
+
+       
+
+
+    </main>
+
+</body>
+</html>

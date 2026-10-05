@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4fbfc;
+    color: #333;
+}
+
+h1 {
+    color: #008c95;
+    font-size: 36px;
+}
+
+h2 {
+    color: #007780;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #008c95;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #008c95;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006b72;
+}
+
+.buttons {
+    margin: 15px 0;
+}
+
+img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 15px 0;
+}
+
+.highlight {
+    background-color: #d9f1f3;
+    color: #007780;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.animal-heading {
+    color: #008c95;
+    font-size: 26px;
+}
+
+.image-highlight {
+    border: 5px solid #008c95;
+    transform: scale(1.03);
+}
+
+#animalTable,
+#observationTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#animalTable th,
+#animalTable td,
+#observationTable th,
+#observationTable td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+#animalTable th,
+#observationTable th {
+    background-color: #d9f1f3;
+}
+
+#animalContent {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #e8f8f9;
+}
+
+select,
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+#selectedAnimal {
+    margin-top: 20px;
+}
+
+.instructions {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+hr {
+    margin: 35px 0;
+}
